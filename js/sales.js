@@ -73,4 +73,14 @@ setRightValue();
 inputLeft.addEventListener("input", setLeftValue);
 inputRight.addEventListener("input", setRightValue);
 
+let openFiltersBtn = document.querySelector('.filter-expand-btn');
+let filtersMenu = document.querySelector('.filters');
+openFiltersBtn.addEventListener('click', e=>{
+    filtersMenu.classList.add('filters-expanded')
+});
+
+let filterCloseBtn = document.querySelector('.filters-close-btn');
+filterCloseBtn.addEventListener('click',e=>{
+    filtersMenu.classList.remove('filters-expanded')
+})
 
